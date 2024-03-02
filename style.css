@@ -1,0 +1,48 @@
+header {
+    font-family: "Palatino"; 
+    font-weight: bold;
+}
+.navbar{
+    width: 100%;
+    overflow: hidden;
+    background-color:rgb(60, 82, 121);
+}
+.navbar ul{
+    list-style-type: none;
+    
+    margin: 0px;
+    
+}
+.navbar a{
+    color:antiquewhite;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: burlywood;
+}
+.navbar li{
+    float: left;
+}
+
+p1{
+    font-family: "Palatino";
+}
+main{
+    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+p2{
+    margin-left: 20px;
+    width: 50%;
+    float: inline-start;
+    font-family: "Palatino";
+}
+imgabout{
+    float: inline-end;
+    margin-right: 10px;
+}
