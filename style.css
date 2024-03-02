@@ -1,48 +1,131 @@
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set the minimum height of the wrapper to 100% of the viewport height */
+}
+
 header {
-    font-family: "Palatino"; 
-    font-weight: bold;
+    font-family: "Arial"; 
+    font-size: 22px;
 }
 .navbar{
     width: 100%;
+    height: 70px;
     overflow: hidden;
     background-color:rgb(60, 82, 121);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .navbar ul{
     list-style-type: none;
-    
+    padding: 0px;
     margin: 0px;
-    
+    height: 70px;
 }
 .navbar a{
     color:antiquewhite;
     text-decoration: none;
-    padding: 15px;
+    padding: 22px 16px;
     display: block;
     text-align: center;
-}
-.navbar a:hover{
-    background-color: burlywood;
+    height: 70px;
+
 }
 .navbar li{
     float: left;
 }
-
-p1{
-    font-family: "Palatino";
+.menu li{
+    width: 125px;
 }
-main{
-    margin: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
+nav_menu a:hover{
+    background-color:rgb(76, 109, 170);
+    transition: all 0.3s ease;
+}
+p1{
+    font-family: "Arial";
+    font-size: 20px;
+    color:rgb(91, 90, 90);
+}
+proimg{
+    margin-top: 40px;
+    float:inline-end;
+}
+.container{
+    max-width: 1000px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add some padding to the left and right */
+}
+.aboutcontain{
+    flex: 1;
+    max-width: 1000px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add some padding to the left and right */
 }
 p2{
     margin-left: 20px;
     width: 50%;
     float: inline-start;
-    font-family: "Palatino";
+    font-family: "Arial";
+    font-size: 20px;
+    color:rgb(91, 90, 90);
 }
 imgabout{
     float: inline-end;
     margin-right: 10px;
+    margin-top: 40px;
+}
+imgabout2{
+    margin-top: 50px;
+    float: inline-end;
+    margin-right: 10px;
+}
+#logo{
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Arial";
+}
+.titlep{
+    font-family: "Arial";
+    color: rgb(78, 78, 78);
+    margin-left: 170px;
+}
+footer{
+    text-align:center;
+    margin-top: auto; 
+}
+.button-container {
+    
+    display: inline-block; /* Ensure buttons are displayed in a line */
+}
+footer a {
+    text-decoration: none; /* Remove underlines from anchor tags */
+}
+.shape {
+    width: 1000px; /* Width of the shape */
+    height: 300px; /* Height of the shape */
+    background-color: rgba(131, 184, 224, 0.35); /* Background color of the shape */
+    color: rgb(78, 78, 78); /* Text color */
+    text-align:left; /* Center the text horizontally */
+    /*line-height: 100px; /* Center the text vertically */
+    font-size: 18px; /* Font size of the text */
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    font-family: "Arial";
+}
+.buttonp {
+    display: inline-block; /* Display the button as inline-block */
+    background-color: #fffefe; /* Button background color */
+    color: rgb(60, 82, 121); /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    text-decoration: none; /* Remove underline from the link */
+     /* Button border radius */
+}
+
+.buttonp:hover {
+    background-color: #f0f0f0; /* Button background color on hover */
 }
