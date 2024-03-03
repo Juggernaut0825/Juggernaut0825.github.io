@@ -125,21 +125,27 @@ footer a {
 }
 @media only screen and (max-width: 600px) {
     /* Adjustments for smaller screens */
+    .navbar,
+    .navbar ul,
+    .navbar li,
+    .navbar a {
+        height: auto; /* Change to auto height to fit content */
+        width: 100%; /* Ensure full width */
+    }
 
     .navbar ul {
         display: flex;
         flex-direction: column;
-        height: auto;
     }
 
     .navbar li {
         float: none;
+        width: 100%; /* Full width for list items */
     }
 
     .navbar a {
-        padding: 15px 10px; /* Adjust padding for smaller screens */
+        padding: 15px 0; /* Adjust padding for better spacing */
     }
-
     .button-container {
         display: block;
         margin-bottom: 20px; /* Add some space between buttons */
