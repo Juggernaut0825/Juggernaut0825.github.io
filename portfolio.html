@@ -18,6 +18,7 @@
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="edu.html">Education</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                 </div>
             </ul>
@@ -26,9 +27,17 @@
 
     <div class="port_container">
         <main class="portfolio-main">
+            <div class="filter-buttons">
+                <button onclick="filterPortfolio('all')">All</button>
+                <button onclick="filterPortfolio('stats')">Statistics</button>
+                <button onclick="filterPortfolio('analytics')">Analytics</button>
+                <button onclick="filterPortfolio('sports')">Sports</button>
+                <button onclick="filterPortfolio('nlp')">NLP</button>
+            </div>
+
             <h2 class="titlep">Zijian Wang's Portfolio</h2>
         
-            <div class="shape">
+            <div class="shape" data-category="stats">
                 <h3>“Bias Bound of Synthetic Control Estimator”, 2024</h3>
                 <p>
                     Guided by Dr. David Hirshberg. We developed a new perspective on bounding post-treatment bias in synthetic control methods. 
@@ -37,7 +46,7 @@
                 <a href="port_bias.pdf" class="buttonp">Read More</a>
             </div>
         
-            <div class="shape">
+            <div class="shape" data-category= "analytics">
                 <h3>“Behind Augusta, Georgia”, 2024</h3>
                 <p>
                     In collaboration with Jiaqi Chen and Humaira Tanzeem. We assessed the conditions of disadvantaged communities in Augusta, Georgia 
@@ -47,7 +56,7 @@
                 <a href="https://storymaps.arcgis.com/stories/ce53cf1b1d124ac39fcb9a587b409910" class="buttonp">Web Link</a>
             </div>
         
-            <div class="shape">
+            <div class="shape" data-category="nlp">
                 <h3>“How Misogynistic is Rap? Lyrical and Comparative Analysis”, 2023</h3>
                 <p>
                     In collaboration with Indy Gu and Michael Cao. This project quantitatively assessed the presence of misogyny in music lyrics across genres, 
@@ -57,7 +66,7 @@
                 <a href="port1.pdf" class="buttonp">Read More</a>
             </div>
         
-            <div class="shape">
+            <div class="shape" data-category="sports">
                 <h3>“The Atlanta Braves' Player Evaluations”, 2023</h3>
                 <p>
                     With Chris Paik and Sam Chen. We investigated the Atlanta Braves’ player contract strategy, focusing on their emphasis on young talent. 
@@ -66,7 +75,7 @@
                 <a href="port2.pdf" class="buttonp">Read More</a>
             </div>
         
-            <div class="shape">
+            <div class="shape" data-category="sports">
                 <h3>“Warriors Report: 2022–2023 Season Analysis”, 2023</h3>
                 <p>
                     This analysis evaluated the Golden State Warriors’ fluctuating performance during the 2022–23 season using advanced stats and regression techniques. 
@@ -75,7 +84,7 @@
                 <a href="port3.pdf" class="buttonp">Read More</a>
             </div>
         
-            <div class="shape">
+            <div class="shape" data-category="sports">
                 <h3>“What’s Wrong With This Golden State Warriors?”, 2022</h3>
                 <p>
                     A deep dive into the Warriors’ mid-season slump. This study used play-by-play data to investigate offensive/defensive efficiency, 
@@ -96,5 +105,15 @@
             <a href="Michael_wang_resume.pdf" class="buttonp">Resume</a>
         </div>
     </footer>
+
+    <script>
+        function filterPortfolio(category) {
+            const projects = document.querySelectorAll('.shape');
+            projects.forEach(p => {
+                const match = category === 'all' || p.dataset.category === category;
+                p.style.display = match ? 'block' : 'none';
+            });
+        }
+        </script>
 </body>
 </html>
