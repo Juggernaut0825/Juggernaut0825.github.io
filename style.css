@@ -25,46 +25,41 @@ header {
     font-size: 22px;
 }
 .navbar {
-    width: 100%;
-    height: 70px;
     background-color: rgb(60, 82, 121);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 20px;
+.nav-container {
+    max-width: 1000px;
+    margin: auto;
     display: flex;
-    align-items: center; /* Center items vertically */
-    height: 70px;
-}
-
-.navbar li {
-    display: flex;
-    align-items: center;  /* Ensure text inside li is also vertically centered */
-    height: 70px;
-}
-
-.navbar a {
-    color: antiquewhite;
-    text-decoration: none;
-    padding: 0 16px;
-    height: 70px;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;  /* Optional: center horizontally if needed */
-}
-.menu li {
-    width: 125px;
-    display: inline-block;
-}
-.menu a:hover {
-    background-color: rgb(76, 109, 170);
-    transition: all 0.3s ease;
+    padding: 0 20px;
+    height: 70px;
 }
 #logo {
+    color: antiquewhite;
     font-weight: bold;
     font-size: 22px;
+    text-decoration: none;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.menu li a {
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 10px 0;
+}
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: antiquewhite;
+    cursor: pointer;
 }
 
 /* ===== Containers ===== */
@@ -181,11 +176,11 @@ footer a {
     text-decoration: none;
 }
 
+/* ===== Filter Buttons ===== */
 .filter-buttons {
     text-align: center;
     margin-bottom: 30px;
 }
-
 .filter-buttons button {
     background-color: #e0e0e0;
     color: #333;
@@ -196,23 +191,31 @@ footer a {
     border-radius: 4px;
     cursor: pointer;
 }
-
 .filter-buttons button:hover {
     background-color: #ccc;
 }
 
-
 /* ===== Media Queries ===== */
 @media only screen and (max-width: 768px) {
-    .navbar ul {
+    .nav-container {
+        flex-wrap: wrap;
+    }
+    .menu {
+        display: none;
         flex-direction: column;
-    }
-    .menu li {
+        background-color: rgb(60, 82, 121);
         width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 10px 0;
+        z-index: 999;
     }
-    .button-container {
+    .menu.show {
+        display: flex;
+    }
+    .menu-toggle {
         display: block;
-        text-align: center;
     }
     .shape {
         font-size: 16px;
@@ -224,5 +227,9 @@ footer a {
     .profile-text {
         text-align: center;
         padding: 0 10px;
+    }
+    .button-container {
+        display: block;
+        text-align: center;
     }
 }

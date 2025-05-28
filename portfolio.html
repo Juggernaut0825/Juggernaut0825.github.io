@@ -13,16 +13,18 @@
 <body>
     <header>
         <nav class="navbar">
-            <ul>
-                <li><a href="/" id="logo">MICHAEL WANG</a></li>
-                <div class="menu">
+            <div class="nav-container">
+                <a href="/" id="logo">MICHAEL WANG</a>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <ul class="menu" id="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="edu.html">Education</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                </div>
-            </ul>
+                </ul>
+            </div>
         </nav>
+        
     </header>
 
     <div class="port_container">
@@ -115,5 +117,11 @@
             });
         }
         </script>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("menu").classList.toggle("show");
+    }
+    </script>
 </body>
 </html>
