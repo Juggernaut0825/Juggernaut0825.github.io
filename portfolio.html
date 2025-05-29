@@ -33,24 +33,46 @@
             <div class="filter-buttons">
                 <button onclick="filterPortfolio('all')">All</button>
                 <button onclick="filterPortfolio('stats')">Statistics</button>
+                <button onclick="filterPortfolio('nlp')">NLP</button>
+                <button onclick="filterPortfolio('ml')">ML</button>
                 <button onclick="filterPortfolio('analytics')">Analytics</button>
                 <button onclick="filterPortfolio('sports')">Sports</button>
-                <button onclick="filterPortfolio('nlp')">NLP</button>
             </div>
 
             <h2 class="titlep">Zijian Wang's Portfolio</h2>
+
+            <div class="shape" data-category="stats">
+                <h3>Thesis: “Mini-Max-Structured Neural Tangent Kernel in Estimating Average Treatment Effect Confounded by Image Covariate”, 2025</h3>
+                <p>
+                    Conducted as my Honors Thesis under the guidance of Dr. David Hirshberg, this project explores how image-based confounding affects causal inference and introduces a novel two-step minimax estimator using Neural Tangent Kernel (NTK). 
+                    The method formulates a balancing objective in reproducing kernel Hilbert space (RKHS), estimating inverse probability weights that minimize worst-case imbalance.
+                    Applications include observational treatment effect estimation in medical imaging and other high-dimensional visual settings.
+                </p>
+                <a href="port_thesis.pdf" class="buttonp">Thesis PDF</a> <a href="defense.pdf" class="buttonp">Defense Slide</a> <a href="https://github.com/Juggernaut0825/NTK_LungImaging" class="buttonp">Github</a> <a href="honorpost.pdf" class="buttonp">Poster</a> 
+            </div>
+
+            <div class="shape" data-category="ml">
+                <h3>Project: “Clothing Segmentation and Virtual Try-On Pipeline”, 2025</h3>
+                <p>
+                    In collaboration with Jessie Ni and Michael Cao, this project focused on semantic segmentation of fashion images using U-Net and FCN models to accurately extract clothing masks from multi-class datasets.
+                    The extracted segments were integrated into a virtual try-on system using GAN-based pipelines (e.g., VITON and TryOnGAN). Our work addressed challenges in garment alignment, resolution artifacts, and mask precision, producing realistic visual try-ons from raw clothing and model images.
+                    This project demonstrates the practical fusion of computer vision and fashion-tech, with potential applications in e-commerce and retail personalization.
+                </p>
+                <a href="port_clothseg.docx.pdf" class="buttonp">PDF</a> <a href="https://github.com/Juggernaut0825/clothseg" class="buttonp">Github</a> <a href="poster_447final.pdf" class="buttonp">Poster</a>
+            </div>
+            
         
             <div class="shape" data-category="stats">
-                <h3>“Bias Bound of Synthetic Control Estimator”, 2024</h3>
+                <h3>Research: “Bias Bound of Synthetic Control Estimator”, 2024</h3>
                 <p>
                     Guided by Dr. David Hirshberg. We developed a new perspective on bounding post-treatment bias in synthetic control methods. 
                     Our approach connects pre-treatment fit directly with post-treatment bias. Full derivation and comparisons with past methods are included in the appendix.
                 </p>
-                <a href="port_bias.pdf" class="buttonp">Read More</a>
+                <a href="port_bias.pdf" class="buttonp">PDF</a>
             </div>
         
             <div class="shape" data-category= "analytics">
-                <h3>“Behind Augusta, Georgia”, 2024</h3>
+                <h3>Project: “Behind Augusta, Georgia”, 2024</h3>
                 <p>
                     In collaboration with Jiaqi Chen and Humaira Tanzeem. We assessed the conditions of disadvantaged communities in Augusta, Georgia 
                     and how their environments have changed over time. Using GIS and SARIMA models, we presented findings through a public-facing 
@@ -60,40 +82,40 @@
             </div>
         
             <div class="shape" data-category="nlp">
-                <h3>“How Misogynistic is Rap? Lyrical and Comparative Analysis”, 2023</h3>
+                <h3>Project: “How Misogynistic is Rap? Lyrical and Comparative Analysis”, 2023</h3>
                 <p>
                     In collaboration with Indy Gu and Michael Cao. This project quantitatively assessed the presence of misogyny in music lyrics across genres, 
                     using Natural Language Processing (NLP), semantic similarity, and statistical analysis. We compared rap lyrics with misogynistic keyword vectors 
                     to determine genre-level trends.
                 </p>
-                <a href="port1.pdf" class="buttonp">Read More</a>
+                <a href="port1.pdf" class="buttonp">PDF</a>
             </div>
         
             <div class="shape" data-category="sports">
-                <h3>“The Atlanta Braves' Player Evaluations”, 2023</h3>
+                <h3>Project: “The Atlanta Braves' Player Evaluations”, 2023</h3>
                 <p>
                     With Chris Paik and Sam Chen. We investigated the Atlanta Braves’ player contract strategy, focusing on their emphasis on young talent. 
                     Through statistical modeling, we analyzed traits valued by the Braves, examining profiles of players like Ronald Acuña Jr. and Ozzie Albies.
                 </p>
-                <a href="port2.pdf" class="buttonp">Read More</a>
+                <a href="port2.pdf" class="buttonp">PDF</a>
             </div>
         
             <div class="shape" data-category="sports">
-                <h3>“Warriors Report: 2022–2023 Season Analysis”, 2023</h3>
+                <h3>Project: “Warriors Report: 2022–2023 Season Analysis”, 2023</h3>
                 <p>
                     This analysis evaluated the Golden State Warriors’ fluctuating performance during the 2022–23 season using advanced stats and regression techniques. 
                     We examined Klay Thompson’s impact, first-quarter trends, shooting efficiency, bench versus starters, and Jordan Poole’s contribution.
                 </p>
-                <a href="port3.pdf" class="buttonp">Read More</a>
+                <a href="port3.pdf" class="buttonp">PDF</a>
             </div>
         
             <div class="shape" data-category="sports">
-                <h3>“What’s Wrong With This Golden State Warriors?”, 2022</h3>
+                <h3>Project: “What’s Wrong With This Golden State Warriors?”, 2022</h3>
                 <p>
                     A deep dive into the Warriors’ mid-season slump. This study used play-by-play data to investigate offensive/defensive efficiency, 
                     key player absences, and performance volatility. We also analyzed Curry’s shooting patterns and the defensive impact of Draymond Green.
                 </p>
-                <a href="port4.pdf" class="buttonp">Read More</a>
+                <a href="port4.pdf" class="buttonp">PDF</a>
             </div>
         </main>
         
