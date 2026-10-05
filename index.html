@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,25 +5,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Zijian (Michael) Wang - Georgia Tech Statistics (MS) | Portfolio, Projects, Resume</title>
+  <title>Zijian (Michael) Wang - AI/ML Engineer | Georgia Tech MS Statistics</title>
   <meta name="description"
-    content="Homepage of Zijian (Michael) Wang, MS in Statistics at Georgia Tech. Explore portfolio, projects, and resume in Statistics, NLP, ML, and Analytics.">
+    content="Zijian (Michael) Wang, AI/ML engineer and MS in Statistics at Georgia Tech. LLM agents, RAG, semantic search, recommendation systems, and agent benchmarks.">
   <meta name="author" content="Zijian (Michael) Wang">
   <meta name="robots" content="index, follow">
 
   <link rel="canonical" href="https://juggernaut0825.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Zijian (Michael) Wang - Georgia Tech Statistics (MS)">
-  <meta property="og:description" content="Portfolio, projects, and resume in Statistics, NLP, ML, and Analytics.">
+  <meta property="og:title" content="Zijian (Michael) Wang - AI/ML Engineer">
+  <meta property="og:description"
+    content="LLM agents, RAG, semantic search, recommendation systems, and agent benchmarks.">
   <meta property="og:url" content="https://juggernaut0825.github.io/">
-  <meta property="og:image" content="https://juggernaut0825.github.io/newProfile.JPG">
+  <meta property="og:image" content="https://juggernaut0825.github.io/img/profile.jpg">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Zijian (Michael) Wang - Georgia Tech Statistics (MS)">
-  <meta name="twitter:description" content="Portfolio, projects, and resume in Statistics, NLP, ML, and Analytics.">
-  <meta name="twitter:image" content="https://juggernaut0825.github.io/newProfile.JPG">
+  <meta name="twitter:title" content="Zijian (Michael) Wang - AI/ML Engineer">
+  <meta name="twitter:description"
+    content="LLM agents, RAG, semantic search, recommendation systems, and agent benchmarks.">
+  <meta name="twitter:image" content="https://juggernaut0825.github.io/img/profile.jpg">
 
   <script type="application/ld+json">
   {
@@ -32,9 +36,10 @@
     "@type": "Person",
     "name": "Zijian (Michael) Wang",
     "alternateName": "Michael Wang",
+    "jobTitle": "AI/ML Engineer",
     "url": "https://juggernaut0825.github.io/",
-    "image": "https://juggernaut0825.github.io/newProfile.JPG",
-    "email": "mailto:zwang3613@gatech.edu",
+    "image": "https://juggernaut0825.github.io/img/profile.jpg",
+    "email": "mailto:wzijian357@gmail.com",
     "affiliation": { "@type": "CollegeOrUniversity", "name": "Georgia Institute of Technology" },
     "alumniOf": [
       { "@type": "CollegeOrUniversity", "name": "Georgia Institute of Technology" },
@@ -49,44 +54,94 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="/" id="logo">MICHAEL WANG</a>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <ul class="menu" id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="edu.html">Education</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-        </ul>
-      </div>
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="/" id="logo">MICHAEL<span>.</span>WANG</a>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
     </nav>
   </header>
 
-  <h1 class="sr-only">Zijian (Michael) Wang - Georgia Tech Statistics</h1>
-  <div class="container">
-    <div class="profile">
-      <img src="newProfile.JPG" alt="Profile picture" class="profile-img" />
-      <div class="profile-text">
-        <h3>Zijian (Michael) Wang (He/Him)</h3><br />
-        <p><strong>MS in Statistics</strong> at Georgia Institute of Technology</p><br />
-        <p><strong>Academic Interests</strong>: Machine Learning, Deep Learning, Causal Inference, AI, Sports Analytics,
-          NLP, Actuarial Analytics</p><br />
-        <p><strong>Programming Skills</strong>: Python, R, Java, SQL, C, Excel, GIS</p><br />
-        <p>For more information, jump to <a href="Michael_wang_resume.pdf">resume</a>, <a href="about.html">about</a>,
-          and my <a href="portfolio.html">Zijian Wang’s portfolio</a>, or email: zwang3613@gatech.edu</p>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>Zijian (Michael) Wang <span class="pronouns">(He/Him)</span></h1>
+          <p class="subtitle">AI / ML Engineer · MS Statistics at Georgia Tech</p>
+          <p class="lead">
+            Currently at <strong>Microsoft Research</strong>, building benchmarks for how LLM agents adapt when user
+            intent evolves. Before that, I shipped search, recommendation, and AI agent systems to production at
+            <strong>E Closet</strong> and built agent memory at <strong>Buildsense AI</strong>.
+          </p>
+          <div class="chips">
+            <span class="chip">LLM Agents</span>
+            <span class="chip">RAG &amp; Memory</span>
+            <span class="chip">Semantic Search</span>
+            <span class="chip">Recommendation Systems</span>
+            <span class="chip">Benchmark Design</span>
+            <span class="chip">Causal Inference</span>
+          </div>
+          <div class="btn-row">
+            <a href="portfolio.html" class="btn btn-primary">View portfolio →</a>
+            <a href="Michael_wang_resume.pdf" class="btn">Resume</a>
+            <a href="https://github.com/Juggernaut0825" class="btn">GitHub</a>
+            <a href="https://www.linkedin.com/in/zijian-wang-071a46223/" class="btn">LinkedIn</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="img/profile.jpg" alt="Zijian (Michael) Wang at Emory Oxford commencement" />
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
+
+
+    <section class="section" style="padding-top: 8px;">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Recent Work</h2>
+        </div>
+        <div class="card-grid">
+          <a class="card" href="portfolio.html#microsoft" style="color: inherit; text-decoration: none;">
+            <div class="card-meta">Microsoft Research · Sep 2026 – Present</div>
+            <h3>IntentDelta</h3>
+            <p>A benchmark testing whether tool-calling LLM agents adapt when users change their minds mid-conversation:
+              400+ annotated trajectories across WebShop and TravelPlanner.</p>
+            <div class="chips"><span class="chip">Agents</span><span class="chip">Evaluation</span></div>
+          </a>
+          <a class="card" href="portfolio.html#ecloset" style="color: inherit; text-decoration: none;">
+            <div class="card-meta">E Closet · Feb – Sep 2026</div>
+            <h3>Search, RecSys &amp; Ask-e</h3>
+            <p>Six-tier semantic search (31× faster deep pages), multi-centroid recommendations, reverse-image search,
+              and a 14-tool AI shopping agent, all in production.</p>
+            <div class="chips"><span class="chip">Search</span><span class="chip">RecSys</span><span
+                class="chip">Agents</span></div>
+          </a>
+          <a class="card" href="portfolio.html#buildsense" style="color: inherit; text-decoration: none;">
+            <div class="card-meta">Buildsense AI · Apr 2025 – Mar 2026</div>
+            <h3>PaperMem</h3>
+            <p>Explainable memory for AI agents: pgvector + Neo4j graph expansion. Scored 4.24/5 overall and beat a
+              matched RAG baseline by 9.9% on faithfulness.</p>
+            <div class="chips"><span class="chip">RAG</span><span class="chip">Knowledge Graphs</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <hr />
-    <div class="button-container">
-      <a href="https://github.com/Juggernaut0825" class="buttonp">Github</a>
-      <a href="https://www.linkedin.com/in/zijian-wang-071a46223/" class="buttonp">LinkedIn</a>
-      <a href="mailto:zwang3613@gatech.edu" class="buttonp">Email</a>
-      <a href="Michael_wang_resume.pdf" class="buttonp">Resume</a>
+    <div class="footer-inner">
+      <span>© 2026 Zijian (Michael) Wang</span>
+      <div class="footer-links">
+        <a href="https://github.com/Juggernaut0825">GitHub</a>
+        <a href="https://www.linkedin.com/in/zijian-wang-071a46223/">LinkedIn</a>
+        <a href="mailto:wzijian357@gmail.com">Email</a>
+        <a href="Michael_wang_resume.pdf">Resume</a>
+      </div>
     </div>
   </footer>
 

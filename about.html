@@ -5,101 +5,141 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>About - Zijian (Michael) Wang | Georgia Tech Statistics</title>
+  <title>About - Zijian (Michael) Wang | AI/ML Engineer</title>
   <meta name="description"
-    content="About Zijian (Michael) Wang, MS in Statistics at Georgia Tech. Interests: ML, NLP, Causal Inference, Sports Analytics.">
+    content="About Zijian (Michael) Wang, AI/ML engineer and MS in Statistics at Georgia Tech. LLM agents, retrieval, recommendation systems, and causal inference.">
   <meta name="author" content="Zijian (Michael) Wang">
   <meta name="robots" content="index, follow">
 
   <link rel="canonical" href="https://juggernaut0825.github.io/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="About - Zijian (Michael) Wang | Georgia Tech Statistics">
+  <meta property="og:title" content="About - Zijian (Michael) Wang | AI/ML Engineer">
   <meta property="og:description"
-    content="MS in Statistics at Georgia Tech. ML, NLP, Causal Inference, Sports Analytics.">
+    content="AI/ML engineer and MS in Statistics at Georgia Tech. LLM agents, retrieval, recommendation systems.">
   <meta property="og:url" content="https://juggernaut0825.github.io/about.html">
-  <meta property="og:image" content="https://juggernaut0825.github.io/newProfile.JPG">
+  <meta property="og:image" content="https://juggernaut0825.github.io/img/profile.jpg">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About - Zijian (Michael) Wang | Georgia Tech Statistics">
+  <meta name="twitter:title" content="About - Zijian (Michael) Wang | AI/ML Engineer">
   <meta name="twitter:description"
-    content="MS in Statistics at Georgia Tech. ML, NLP, Causal Inference, Sports Analytics.">
-  <meta name="twitter:image" content="https://juggernaut0825.github.io/newProfile.JPG">
+    content="AI/ML engineer and MS in Statistics at Georgia Tech. LLM agents, retrieval, recommendation systems.">
+  <meta name="twitter:image" content="https://juggernaut0825.github.io/img/profile.jpg">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="/" id="logo">MICHAEL WANG</a>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <ul class="menu" id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="edu.html">Education</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-        </ul>
-      </div>
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="/" id="logo">MICHAEL<span>.</span>WANG</a>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
     </nav>
   </header>
 
-  <div class="aboutcontain">
-    <main class="about-main">
-      <div class="about-text">
-        <h2 class="titlep">About</h2>
-        <p>
-          I'm Zijian (Michael) Wang, a data scientist and aspiring AI researcher currently pursuing my M.S. in
-          Statistics at Georgia Institute of Technology, with a B.S. in Quantitative Sciences (Data Science track) and a
-          minor in Computer Science from Emory University.
-        </p><br>
-
-        <p>
-          My academic journey has been rooted in a passion for understanding data, extracting insights, and solving
-          real-world problems using rigorous quantitative methods. I've been actively involved in research on
-          <strong>causal inference under image confounding</strong>, developing novel approaches with <strong>Neural
-            Tangent Kernel (NTK)</strong>-based inverse probability weighting. My honors thesis titled
-          <em>“Mini-Max-Structured Neural Tangent Kernel in Estimating Average Treatment Effect Confounded by Image
-            Covariate”</em> combines statistical theory with machine learning techniques, and has been recognized for
-          its innovation.
-        </p><br>
-
-        <p>
-          I'm equally enthusiastic about practical applications. I've led and collaborated on several projects in
-          <strong>sports analytics, natural language processing, and environmental justice</strong>. These include
-          evaluating player strategies for the Atlanta Braves, analyzing misogyny in rap lyrics using NLP, and
-          forecasting environmental changes in underserved communities using GIS and time-series modeling. For more,
-          visit my <a href="portfolio.html">portfolio</a>.
-        </p><br>
-
-        <p>
-          My technical toolkit includes Python, R, Java, SQL, and C, and I frequently work with libraries and tools such
-          as PyTorch, scikit-learn, FastAPI, and Neo4j. I’m currently integrating <strong>AI-native automation into
-            construction site reporting</strong> using DeepSeek API, large language models, and knowledge graph RAG
-          systems.
-        </p><br>
-
-        <p>
-          Outside of academics and research, I'm passionate about basketball (huge Golden State Warriors fan!), jazz
-          saxophone, fitness, and exploring new hiking trails. I'm always open to collaborative opportunities at the
-          intersection of statistics, machine learning, and impactful real-world use cases.
-        </p>
+  <main class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>About</h2>
       </div>
 
-      <div class="about-img">
-        <img src="hoop.jpg" height="250" width="375" alt="Basketball photo" />
-        <figcaption>A picture of me hooping at Emory Oxford</figcaption>
+      <div class="about-grid">
+        <div class="prose">
+          <p>
+            I'm Zijian (Michael) Wang, an M.S. in Statistics student at the <strong>Georgia Institute of
+              Technology</strong>. I hold a B.S. in Quantitative Sciences (Data Science track) with a minor in Computer
+            Science from <strong>Emory University</strong>. I like building AI systems that real people use, and I like
+            measuring them carefully enough to know whether they actually work.
+          </p>
+
+          <p>
+            Right now I'm collaborating with <strong>Microsoft Research</strong> mentors on <em>IntentDelta</em>, a
+            benchmark that tests whether tool-calling LLM agents keep up when a user's goals change mid-conversation.
+            Before that, as a Data Science &amp; AI Engineer intern at <strong>E Closet</strong>, I shipped a six-tier
+            semantic search engine, a personalized recommendation system, FashionSigLIP-based reverse-image search,
+            and <em>Ask-e</em>, a 14-tool AI shopping assistant, all serving production traffic. At
+            <strong>Buildsense AI</strong>, I built <em>PaperMem</em>, an explainable memory system for agents that
+            combines pgvector retrieval with Neo4j graph expansion.
+          </p>
+
+          <p>
+            My statistics background shapes how I build. My honors thesis, <em>"Minimax NTK in Estimating Average
+              Treatment Effect Confounded by Image Covariate"</em> (advised by Dr. David Hirshberg), developed a Neural
+            Tangent Kernel balancing estimator for causal inference with high-dimensional image confounders. I bring
+            that same rigor to offline evals, A/B-style comparisons, and benchmark design.
+          </p>
+
+          <p>
+            On the side, I build <strong>ZYM</strong>, an AI personal-trainer app for iOS and web with 400+ users,
+            featuring a multimodal agent and a fine-tuned barbell-tracking detector. Earlier work spans sports
+            analytics (Atlanta Braves, Golden State Warriors), NLP, and environmental-justice GIS work with Science for
+            Georgia. See the <a href="portfolio.html">portfolio</a> for more.
+          </p>
+
+          <p>
+            Outside of work: basketball (lifelong Warriors fan), jazz saxophone, lifting, and hiking. I'm open to
+            relocation and always happy to chat about agents, retrieval, or evaluation.
+          </p>
+
+          <div class="btn-row" style="margin-top: 8px;">
+            <a href="portfolio.html" class="btn btn-primary">See my work →</a>
+            <a href="mailto:wzijian357@gmail.com" class="btn">Email me</a>
+          </div>
+        </div>
+
+        <aside class="about-side">
+          <figure>
+            <img src="img/hoop.jpg" alt="Michael playing basketball at Emory Oxford" />
+            <figcaption>Hooping at Emory Oxford</figcaption>
+          </figure>
+          <div class="card">
+            <div class="skill-group">
+              <h4>Languages &amp; Infra</h4>
+              <div class="chips">
+                <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">JavaScript</span>
+                <span class="chip">Swift</span><span class="chip">Java</span><span class="chip">R</span>
+                <span class="chip">AWS</span><span class="chip">Google Cloud</span><span class="chip">Docker</span>
+                <span class="chip">PyTorch</span><span class="chip">Git</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4>AI / ML Systems</h4>
+              <div class="chips">
+                <span class="chip">LLM Agents</span><span class="chip">RAG</span><span class="chip">MCP</span>
+                <span class="chip">Semantic Search</span><span class="chip">Recommendation</span>
+                <span class="chip">NLP</span><span class="chip">Benchmark Design</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4>Stack I've shipped with</h4>
+              <div class="chips">
+                <span class="chip">FastAPI</span><span class="chip">React</span><span class="chip">Electron</span>
+                <span class="chip">PostgreSQL / pgvector</span><span class="chip">Neo4j</span>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
-    </main>
-  </div>
+    </div>
+  </main>
 
   <footer>
-    <hr />
-    <div class="button-container">
-      <a href="https://github.com/Juggernaut0825" class="buttonp">Github</a>
-      <a href="https://www.linkedin.com/in/zijian-wang-071a46223/" class="buttonp">LinkedIn</a>
-      <a href="mailto:zwang3613@gatech.edu" class="buttonp">Email</a>
-      <a href="Michael_wang_resume.pdf" class="buttonp">Resume</a>
+    <div class="footer-inner">
+      <span>© 2026 Zijian (Michael) Wang</span>
+      <div class="footer-links">
+        <a href="https://github.com/Juggernaut0825">GitHub</a>
+        <a href="https://www.linkedin.com/in/zijian-wang-071a46223/">LinkedIn</a>
+        <a href="mailto:wzijian357@gmail.com">Email</a>
+        <a href="Michael_wang_resume.pdf">Resume</a>
+      </div>
     </div>
   </footer>
 

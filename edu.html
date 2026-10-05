@@ -4,64 +4,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Education - Michael Wang</title>
+
+  <title>Education - Zijian (Michael) Wang | Georgia Tech &amp; Emory</title>
+  <meta name="description"
+    content="Education of Zijian (Michael) Wang: M.S. Statistics at Georgia Tech (GPA 4.00), B.S. Quantitative Sciences at Emory University (GPA 3.975, High Honor).">
+  <meta name="author" content="Zijian (Michael) Wang">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://juggernaut0825.github.io/edu.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="/" id="logo">MICHAEL WANG</a>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <ul class="menu" id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="edu.html">Education</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-        </ul>
-      </div>
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="/" id="logo">MICHAEL<span>.</span>WANG</a>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="edu.html" class="active">Education</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main class="edu-main">
-    <h2 class="titlep">Education</h2>
+  <main class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Education</h2>
+      </div>
 
-    <div class="edu-entry">
-      <h3>Georgia Institute of Technology (Current)</h3>
-      <p>
-        Master of Science in Statistics<br>
-        Relevant Courses: Statistical Learning, Bayesian Statistics...<br>
-        Research Focus: Causal Inference, Machine Learning, AI Applications...<br>
-      </p>
-    </div>
+      <div class="edu-list">
+        <div class="card edu-entry">
+          <div class="exp-top">
+            <h3>Georgia Institute of Technology <span class="gpa">GPA 4.00</span></h3>
+            <span class="exp-date">Aug 2025 – Dec 2026</span>
+          </div>
+          <div class="exp-role">Master of Science in Statistics (ISyE) · Atlanta, GA</div>
+          <dl>
+            <dt>Relevant courses</dt>
+            <dd>Knowledge-based AI, Statistical Models, Experimental Design, Bayesian Statistics, Computational
+              Analytics</dd>
+          </dl>
+        </div>
 
-    <div class="edu-entry">
-      <h3>Emory University (2021 - 2025)</h3>
-      <p>
-        Major: Quantitative Science (Data Science Track)<br>
-        Minor: Computer Science<br>
-        GPA: 3.975<br>
-        Honors: High Honor Graduate, Dean Lists, Data Fest Best Visualization, Academic Honor Society...<br>
-        Relevant Courses: Causal Inference, ML, NLP, Data Structure, Parametric Statistics, Database Systems...<br>
-      </p>
-    </div>
+        <div class="card edu-entry">
+          <div class="exp-top">
+            <h3>Emory University <span class="gpa">GPA 3.975 · High Honor</span></h3>
+            <span class="exp-date">Aug 2021 – May 2025</span>
+          </div>
+          <div class="exp-role">B.S. Quantitative Sciences (Data Science Track), Minor in Computer Science · Atlanta, GA
+          </div>
+          <dl>
+            <dt>Honors thesis</dt>
+            <dd>Minimax NTK in Estimating Average Treatment Effect Confounded by Image Covariate (advisor: Dr. David
+              Hirshberg)</dd>
+            <dt>Honors</dt>
+            <dd>High Honor Graduate, Dean's List, DataFest Best Visualization, Academic Honor Society</dd>
+            <dt>Relevant courses</dt>
+            <dd>Machine Learning &amp; ML Theory, Causal Inference, AI, Database Systems, NLP, Advanced Statistical
+              Approaches, Data Structures</dd>
+          </dl>
+        </div>
 
-    <div class="edu-entry">
-      <h3>Oxford College of Emory University (2021 - 2023)</h3>
-      <p>
-        Core foundational studies in Math, Stats, and Computing. Built strong interdisciplinary research skills...
-      </p>
+        <div class="card edu-entry">
+          <div class="exp-top">
+            <h3>Oxford College of Emory University</h3>
+            <span class="exp-date">2021 – 2023</span>
+          </div>
+          <div class="exp-role">First two years of Emory B.S. · Oxford, GA</div>
+          <p>Foundational coursework in mathematics, statistics, and computing in a small liberal-arts setting, where I
+            first got into interdisciplinary research.</p>
+        </div>
+      </div>
     </div>
   </main>
 
   <footer>
-    <hr />
-    <div class="button-container">
-      <a href="https://github.com/Juggernaut0825" class="buttonp">Github</a>
-      <a href="https://www.linkedin.com/in/zijian-wang-071a46223/" class="buttonp">LinkedIn</a>
-      <a href="mailto:zwang3613@gatech.edu" class="buttonp">Email</a>
-      <a href="Michael_wang_resume.pdf" class="buttonp">Resume</a>
+    <div class="footer-inner">
+      <span>© 2026 Zijian (Michael) Wang</span>
+      <div class="footer-links">
+        <a href="https://github.com/Juggernaut0825">GitHub</a>
+        <a href="https://www.linkedin.com/in/zijian-wang-071a46223/">LinkedIn</a>
+        <a href="mailto:wzijian357@gmail.com">Email</a>
+        <a href="Michael_wang_resume.pdf">Resume</a>
+      </div>
     </div>
   </footer>
 

@@ -1,4 +1,3 @@
-<!-- portfolio.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,190 +5,358 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Zijian (Michael) Wang - Data Science & Statistics Portfolio | Georgia Tech</title>
+    <title>Portfolio - Zijian (Michael) Wang | AI Agents, Search, RecSys, Statistics</title>
     <meta name="description"
-        content="Portfolio of Zijian (Michael) Wang, MS in Statistics at Georgia Tech. Projects in Statistics, NLP, Machine Learning, and Analytics.">
+        content="Experience and projects of Zijian (Michael) Wang: IntentDelta agent benchmark (Microsoft Research), production search and recommendations at E Closet, PaperMem agent memory, ZYM AI trainer, and statistics research.">
     <meta name="author" content="Zijian (Michael) Wang">
     <meta name="robots" content="index, follow">
 
     <link rel="canonical" href="https://juggernaut0825.github.io/portfolio.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Zijian (Michael) Wang - Data Science & Statistics Portfolio | Georgia Tech">
+    <meta property="og:title" content="Portfolio - Zijian (Michael) Wang">
     <meta property="og:description"
-        content="Projects in Statistics, NLP, Machine Learning, and Analytics by Zijian (Michael) Wang (Georgia Tech).">
+        content="Agent benchmarks, production search & recommendation systems, agent memory, and statistics research.">
     <meta property="og:url" content="https://juggernaut0825.github.io/portfolio.html">
-    <meta property="og:image" content="https://juggernaut0825.github.io/newProfile.JPG">
+    <meta property="og:image" content="https://juggernaut0825.github.io/img/profile.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Zijian (Michael) Wang - Data Science & Statistics Portfolio | Georgia Tech">
+    <meta name="twitter:title" content="Portfolio - Zijian (Michael) Wang">
     <meta name="twitter:description"
-        content="Projects in Statistics, NLP, Machine Learning, and Analytics by Zijian (Michael) Wang (Georgia Tech).">
-    <meta name="twitter:image" content="https://juggernaut0825.github.io/newProfile.JPG">
+        content="Agent benchmarks, production search & recommendation systems, agent memory, and statistics research.">
+    <meta name="twitter:image" content="https://juggernaut0825.github.io/img/profile.jpg">
 </head>
 
 <body>
-
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="/" id="logo">MICHAEL WANG</a>
-                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-                <ul class="menu" id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="edu.html">Education</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-            </div>
+    <header class="navbar">
+        <nav class="nav-container">
+            <a href="/" id="logo">MICHAEL<span>.</span>WANG</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="edu.html">Education</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            </ul>
         </nav>
     </header>
 
+    <main>
+        <h1 class="sr-only">Zijian (Michael) Wang - Portfolio</h1>
 
-    <div class="port_container">
-        <main class="portfolio-main">
-            <div class="filter-buttons">
-                <button onclick="filterPortfolio('all')">All</button>
-                <button onclick="filterPortfolio('stats')">Statistics</button>
-                <button onclick="filterPortfolio('nlp')">NLP</button>
-                <button onclick="filterPortfolio('ml')">ML</button>
-                <button onclick="filterPortfolio('analytics')">Analytics</button>
-                <button onclick="filterPortfolio('sports')">Sports</button>
+        <!-- ===== Experience ===== -->
+        <section class="section" id="experience">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Experience</h2>
+                </div>
+
+                <div class="exp-list">
+                    <!-- Microsoft Research -->
+                    <article class="card exp" id="microsoft">
+                        <div class="exp-logo"><img src="img/logos/microsoft.svg" alt="Microsoft logo"></div>
+                        <div>
+                            <div class="exp-top">
+                                <h3>Microsoft Research</h3>
+                                <span class="exp-date">Sep 2026 – Present · Remote</span>
+                            </div>
+                            <div class="exp-role">IntentDelta: Benchmarking Agents under Evolving User Intent</div>
+                            <ul>
+                                <li>Collaborating with Microsoft Research mentors to build <strong>IntentDelta</strong>,
+                                    a benchmark testing whether tool-calling LLM agents adapt their decisions when a
+                                    user's intent changes partway through a multi-turn conversation.</li>
+                                <li>Developed 400+ human-annotated intent-change trajectories (2.6K+ conversational
+                                    turns) on top of <strong>WebShop</strong> and <strong>TravelPlanner</strong>,
+                                    covering five abstract update types (add, relax, override, reprioritize, scope
+                                    correction) and varied linguistic realization styles.</li>
+                                <li>Designed separate <strong>intent-level</strong> and <strong>action-level</strong>
+                                    evaluations to tell misunderstanding apart from execution failure, and benchmarked
+                                    11 frontier LLMs across 1.7K+ agent turns.</li>
+                                <li>Built the annotation and third-party human-evaluation tooling used to label and
+                                    audit trajectories.</li>
+                            </ul>
+                            <div class="metrics">
+                                <div class="metric"><b>400+</b><span>annotated trajectories</span></div>
+                                <div class="metric"><b>2.6K+</b><span>conversational turns</span></div>
+                                <div class="metric"><b>11</b><span>frontier LLMs benchmarked</span></div>
+                            </div>
+                            <div class="chips" style="margin-top: 14px;">
+                                <span class="chip">Tool-calling agents</span><span class="chip">Benchmark design</span>
+                                <span class="chip">LLM-as-judge</span><span class="chip">Human annotation</span>
+                            </div>
+                            <div class="link-row">
+                                <a class="link-pill" href="https://github.com/jieyuzhou42/IntentionChangeBench">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- E Closet -->
+                    <article class="card exp" id="ecloset">
+                        <div class="exp-logo"><img src="img/logos/ecloset.png" alt="E Closet logo"></div>
+                        <div>
+                            <div class="exp-top">
+                                <h3>E Closet</h3>
+                                <span class="exp-date">Feb 2026 – Sep 2026 · Atlanta, GA</span>
+                            </div>
+                            <div class="exp-role">Data Science &amp; AI Engineer Intern</div>
+                            <ul>
+                                <li><strong>Semantic search:</strong> built and deployed a six-tier cascade (exact
+                                    lexical → brand → structured color/category → semantic → concept → similar-brand
+                                    tail) with a self-evolving concept layer for abstract shopping queries, serving 158K
+                                    production searches per month. Later cut deep-page retrieval latency 31× (1.38 s → 44
+                                    ms) and expanded reachable results per query 7.4× (68 → 500).</li>
+                                <li><strong>Recommendations:</strong> designed vector retrieval over multi-centroid user
+                                    embeddings built from customer behavior, raising Hit@10 from 10.9% to 43.0% (3.9×)
+                                    and MRR by 4.5× in leave-one-out evaluation.</li>
+                                <li><strong>Ask-e:</strong> developed and shipped a skill-based AI customer-support
+                                    agent with 14 tools spanning product search, order tracking, returns, checkout, and
+                                    other shopping workflows. It requires shopper confirmation before executing any
+                                    action.</li>
+                                <li><strong>Reverse-image search:</strong> evaluated and integrated FashionSigLIP as the
+                                    multimodal embedding backbone, enabling similarity search from user-uploaded photos
+                                    (~22K production requests/month).</li>
+                                <li><strong>Analytics:</strong> built an internal analytics platform and admin dashboard
+                                    covering 50+ metrics across 8 business areas, automating code-validated daily
+                                    reporting and improving revenue-forecast WAPE from 0.367 to 0.339.</li>
+                            </ul>
+                            <div class="metrics">
+                                <div class="metric"><b>158K</b><span>searches / month</span></div>
+                                <div class="metric"><b>31×</b><span>faster deep-page retrieval</span></div>
+                                <div class="metric"><b>3.9×</b><span>Hit@10 (10.9% → 43.0%)</span></div>
+                                <div class="metric"><b>14</b><span>agent tools in Ask-e</span></div>
+                                <div class="metric"><b>~22K</b><span>image searches / month</span></div>
+                            </div>
+                            <div class="chips" style="margin-top: 14px;">
+                                <span class="chip">Semantic search</span><span class="chip">Recommender systems</span>
+                                <span class="chip">FashionSigLIP</span><span class="chip">LLM agents</span>
+                                <span class="chip">Forecasting</span>
+                            </div>
+                            <div class="link-row">
+                                <a class="link-pill" href="ecloset_recsys_report.pdf">RecSys technical report</a>
+                                <a class="link-pill" href="ecloset_search_architecture.pdf">Search architecture</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Buildsense AI -->
+                    <article class="card exp" id="buildsense">
+                        <div class="exp-logo bs">BS</div>
+                        <div>
+                            <div class="exp-top">
+                                <h3>Buildsense AI</h3>
+                                <span class="exp-date">Apr 2025 – Mar 2026 · Remote</span>
+                            </div>
+                            <div class="exp-role">AI Agent Development Intern · PaperMem</div>
+                            <ul>
+                                <li>Built <strong>PaperMem</strong>, an explainable, local-first memory system for AI
+                                    agents. It combines hybrid retrieval with pgvector and logical graph expansion
+                                    over claims, concepts, and entities in Neo4j for evidence retrieval.</li>
+                                <li>Achieved 4.24/5 overall quality on a 50-query LLM-as-judge benchmark, beating a
+                                    matched GPT-4o-mini RAG baseline by 9.9% in faithfulness and 4.9% in accuracy.</li>
+                                <li>Developed and deployed a full-stack AI research copilot (FastAPI, React, Electron,
+                                    PostgreSQL) that unifies conversations and uploaded documents into one memory and
+                                    surfaces retrieved evidence through an interactive semantic graph.</li>
+                            </ul>
+                            <div class="metrics">
+                                <div class="metric"><b>4.24 / 5</b><span>overall answer quality</span></div>
+                                <div class="metric"><b>+9.9%</b><span>faithfulness vs. RAG</span></div>
+                                <div class="metric"><b>+4.9%</b><span>accuracy vs. RAG</span></div>
+                            </div>
+                            <div class="chips" style="margin-top: 14px;">
+                                <span class="chip">Agent memory</span><span class="chip">pgvector</span>
+                                <span class="chip">Neo4j</span><span class="chip">FastAPI</span>
+                                <span class="chip">React / Electron</span>
+                            </div>
+                            <div class="link-row">
+                                <a class="link-pill" href="https://github.com/Juggernaut0825/PaperMem">GitHub</a>
+                                <a class="link-pill"
+                                    href="https://github.com/Juggernaut0825/PaperMem/tree/main/llm_as_judge">Evaluation
+                                    code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Science for Georgia -->
+                    <article class="card exp" id="s4ga">
+                        <div class="exp-logo"><img src="img/logos/s4ga.png" alt="Science for Georgia logo"></div>
+                        <div>
+                            <div class="exp-top">
+                                <h3>Science for Georgia</h3>
+                                <span class="exp-date">Sep 2023 – May 2024 · Atlanta, GA</span>
+                            </div>
+                            <div class="exp-role">Data Science &amp; Capstone Research Intern</div>
+                            <ul>
+                                <li>Integrated 4+ environmental and public-health datasets for census-tract analysis
+                                    using Python and ArcGIS.</li>
+                                <li>Modeled 2020–2023 water-quality trends with ARIMA/SARIMAX and identified 5 severe
+                                    indicators above reported standards, including mercury at ~38× and E. coli at ~13×
+                                    their thresholds.</li>
+                                <li>Published an interactive ArcGIS StoryMap identifying high-risk tracts with up to 6
+                                    disadvantaged categories and 38.7% fair/poor-health prevalence.</li>
+                            </ul>
+                            <div class="link-row">
+                                <a class="link-pill"
+                                    href="https://storymaps.arcgis.com/stories/ce53cf1b1d124ac39fcb9a587b409910">StoryMap</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <h1 class="sr-only">Zijian (Michael) Wang - Data Science & Statistics Portfolio</h1>
-            <h2 class="titlep">Zijian Wang's Portfolio</h2>
+        <!-- ===== Projects ===== -->
+        <section class="section" id="projects" style="padding-top: 16px;">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Projects &amp; Research</h2>
+                </div>
 
-            <div class="shape" data-category="stats">
-                <h3>Thesis: “Mini-Max-Structured Neural Tangent Kernel in Estimating Average Treatment Effect Confounded
-                    by Image Covariate”, 2025</h3>
-                <p>
-                    Conducted as my Honors Thesis under the guidance of Dr. David Hirshberg, this project explores how
-                    image-based confounding affects causal inference and introduces a novel two-step minimax estimator
-                    using Neural Tangent Kernel (NTK).
-                    The method formulates a balancing objective in reproducing kernel Hilbert space (RKHS), estimating
-                    inverse probability weights that minimize worst-case imbalance.
-                    Applications include observational treatment effect estimation in medical imaging and other
-                    high-dimensional visual settings.
-                </p>
-                <a href="port_thesis.pdf" class="buttonp">Thesis PDF</a> <a href="defense.pdf" class="buttonp">Defense
-                    Slide</a> <a href="https://github.com/Juggernaut0825/NTK_LungImaging" class="buttonp">Github</a> <a
-                    href="honorpost.pdf" class="buttonp">Poster</a>
+                <div class="filter-buttons">
+                    <button class="active" onclick="filterPortfolio('all', this)">All</button>
+                    <button onclick="filterPortfolio('ai', this)">AI Systems</button>
+                    <button onclick="filterPortfolio('ml', this)">ML / CV</button>
+                    <button onclick="filterPortfolio('stats', this)">Statistics</button>
+                    <button onclick="filterPortfolio('nlp', this)">NLP</button>
+                    <button onclick="filterPortfolio('sports', this)">Sports</button>
+                </div>
+
+                <div class="card-grid">
+                    <article class="card project" data-category="ai ml">
+                        <div class="year">2025 – Present</div>
+                        <h3>ZYM: AI Personal Trainer</h3>
+                        <p>Full-stack Swift iOS app and JavaScript web app with 400+ users. Built a multimodal,
+                            skill-based coaching agent and a CV pipeline. Fine-tuned an open-source object detector for
+                            barbell and free-weight tracking, raising mAP@50 from 66.2% to 83.5%.</p>
+                        <div class="chips"><span class="chip">iOS / Swift</span><span class="chip">Agents</span><span
+                                class="chip">Object detection</span></div>
+                        <div class="link-row">
+                            <a class="link-pill" href="https://zym8.com">zym8.com</a>
+                        </div>
+                    </article>
+
+                    <article class="card project" data-category="stats ml">
+                        <div class="year">2025 · Honors Thesis</div>
+                        <h3>Minimax NTK for Treatment Effects Confounded by Images</h3>
+                        <p>Advised by Dr. David Hirshberg. A two-step minimax Neural Tangent Kernel estimator that
+                            learns inverse-probability balancing weights in an RKHS to minimize worst-case imbalance
+                            when the confounder is an image. Evaluated on medical imaging data.</p>
+                        <div class="chips"><span class="chip">Causal inference</span><span class="chip">NTK /
+                                RKHS</span></div>
+                        <div class="link-row">
+                            <a class="link-pill" href="port_thesis.pdf">Thesis</a>
+                            <a class="link-pill" href="defense.pdf">Defense slides</a>
+                            <a class="link-pill" href="honorpost.pdf">Poster</a>
+                            <a class="link-pill" href="https://github.com/Juggernaut0825/NTK_LungImaging">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="card project" data-category="ml">
+                        <div class="year">2025</div>
+                        <h3>Pixel to Person: Garment Transfer with UNet Segmentation</h3>
+                        <p>With Jessie Ni and Michael Cao. Semantic segmentation of fashion images with U-Net and FCN to
+                            extract clothing masks, fed into GAN-based virtual try-on (VITON, TryOnGAN), tackling
+                            garment alignment and mask precision.</p>
+                        <div class="chips"><span class="chip">Computer vision</span><span class="chip">GANs</span>
+                        </div>
+                        <div class="link-row">
+                            <a class="link-pill" href="port_clothseg.docx.pdf">Report</a>
+                            <a class="link-pill" href="poster_447final.pdf">Poster</a>
+                            <a class="link-pill" href="https://github.com/Juggernaut0825/clothseg">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="card project" data-category="stats">
+                        <div class="year">2024 · Research</div>
+                        <h3>Bias Bound of the Synthetic Control Estimator</h3>
+                        <p>With Dr. David Hirshberg. A new perspective on bounding post-treatment bias in synthetic
+                            control that connects pre-treatment fit directly to post-treatment bias, with full
+                            derivations and comparisons to prior bounds.</p>
+                        <div class="chips"><span class="chip">Causal inference</span><span class="chip">Theory</span>
+                        </div>
+                        <div class="link-row">
+                            <a class="link-pill" href="port_bias.pdf">Paper</a>
+                        </div>
+                    </article>
+
+                    <article class="card project" data-category="nlp">
+                        <div class="year">2023</div>
+                        <h3>How Misogynistic Is Rap? A Lyrical &amp; Comparative Analysis</h3>
+                        <p>With Indy Gu and Michael Cao. Quantified misogyny in lyrics across genres using NLP,
+                            semantic similarity against misogynistic keyword vectors, and statistical comparison of
+                            genre-level trends.</p>
+                        <div class="chips"><span class="chip">NLP</span><span class="chip">Embeddings</span></div>
+                        <div class="link-row">
+                            <a class="link-pill" href="port1.pdf">Presentation</a>
+                        </div>
+                    </article>
+
+                    <article class="card project" data-category="sports">
+                        <div class="year">2023</div>
+                        <h3>The Atlanta Braves' Player Evaluations</h3>
+                        <p>With Chris Paik and Sam Chen. Modeled the traits the Braves value in their young-talent
+                            contract strategy, with profiles of Ronald Acuña Jr. and Ozzie Albies.</p>
+                        <div class="chips"><span class="chip">Sports analytics</span><span
+                                class="chip">Modeling</span></div>
+                        <div class="link-row">
+                            <a class="link-pill" href="port2.pdf">Report</a>
+                        </div>
+                    </article>
+
+                    <article class="card project" data-category="sports">
+                        <div class="year">2023</div>
+                        <h3>Warriors Report: 2022–23 Season Analysis</h3>
+                        <p>Advanced stats and regression on the Warriors' up-and-down season: Klay Thompson's impact,
+                            first-quarter trends, shooting efficiency, bench vs. starters, and Jordan Poole's role.</p>
+                        <div class="chips"><span class="chip">Sports analytics</span><span
+                                class="chip">Regression</span></div>
+                        <div class="link-row">
+                            <a class="link-pill" href="port3.pdf">Report</a>
+                        </div>
+                    </article>
+
+                    <article class="card project" data-category="sports">
+                        <div class="year">2022</div>
+                        <h3>What's Wrong With These Golden State Warriors?</h3>
+                        <p>Play-by-play deep dive into a mid-season slump: offensive/defensive efficiency, key absences,
+                            Curry's shooting patterns, and Draymond Green's defensive impact.</p>
+                        <div class="chips"><span class="chip">Sports analytics</span><span class="chip">Play-by-play
+                                data</span></div>
+                        <div class="link-row">
+                            <a class="link-pill" href="port4.pdf">Report</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-
-            <div class="shape" data-category="ml">
-                <h3>Project: “Clothing Segmentation and Virtual Try-On Pipeline”, 2025</h3>
-                <p>
-                    In collaboration with Jessie Ni and Michael Cao, this project focused on semantic segmentation of
-                    fashion images using U-Net and FCN models to accurately extract clothing masks from multi-class
-                    datasets.
-                    The extracted segments were integrated into a virtual try-on system using GAN-based pipelines (e.g.,
-                    VITON and TryOnGAN). Our work addressed challenges in garment alignment, resolution artifacts, and
-                    mask precision, producing realistic visual try-ons from raw clothing and model images.
-                    This project demonstrates the practical fusion of computer vision and fashion-tech, with potential
-                    applications in e-commerce and retail personalization.
-                </p>
-                <a href="port_clothseg.docx.pdf" class="buttonp">PDF</a> <a
-                    href="https://github.com/Juggernaut0825/clothseg" class="buttonp">Github</a> <a
-                    href="poster_447final.pdf" class="buttonp">Poster</a>
-            </div>
-
-
-            <div class="shape" data-category="stats">
-                <h3>Research: “Bias Bound of Synthetic Control Estimator”, 2024</h3>
-                <p>
-                    Guided by Dr. David Hirshberg. We developed a new perspective on bounding post-treatment bias in
-                    synthetic control methods.
-                    Our approach connects pre-treatment fit directly with post-treatment bias. Full derivation and
-                    comparisons with past methods are included in the appendix.
-                </p>
-                <a href="port_bias.pdf" class="buttonp">PDF</a>
-            </div>
-
-            <div class="shape" data-category="analytics">
-                <h3>Project: “Behind Augusta, Georgia”, 2024</h3>
-                <p>
-                    In collaboration with Jiaqi Chen and Humaira Tanzeem. We assessed the conditions of disadvantaged
-                    communities in Augusta, Georgia
-                    and how their environments have changed over time. Using GIS and SARIMA models, we presented
-                    findings through a public-facing
-                    interactive web platform. The project involved data scraping, time-series analysis, and
-                    environmental justice mapping.
-                </p>
-                <a href="https://storymaps.arcgis.com/stories/ce53cf1b1d124ac39fcb9a587b409910" class="buttonp">Web
-                    Link</a>
-            </div>
-
-            <div class="shape" data-category="nlp">
-                <h3>Project: “How Misogynistic is Rap? Lyrical and Comparative Analysis”, 2023</h3>
-                <p>
-                    In collaboration with Indy Gu and Michael Cao. This project quantitatively assessed the presence of
-                    misogyny in music lyrics across genres,
-                    using Natural Language Processing (NLP), semantic similarity, and statistical analysis. We compared
-                    rap lyrics with misogynistic keyword vectors
-                    to determine genre-level trends.
-                </p>
-                <a href="port1.pdf" class="buttonp">PDF</a>
-            </div>
-
-            <div class="shape" data-category="sports">
-                <h3>Project: “The Atlanta Braves' Player Evaluations”, 2023</h3>
-                <p>
-                    With Chris Paik and Sam Chen. We investigated the Atlanta Braves’ player contract strategy, focusing
-                    on their emphasis on young talent.
-                    Through statistical modeling, we analyzed traits valued by the Braves, examining profiles of players
-                    like Ronald Acuña Jr. and Ozzie Albies.
-                </p>
-                <a href="port2.pdf" class="buttonp">PDF</a>
-            </div>
-
-            <div class="shape" data-category="sports">
-                <h3>Project: “Warriors Report: 2022–2023 Season Analysis”, 2023</h3>
-                <p>
-                    This analysis evaluated the Golden State Warriors’ fluctuating performance during the 2022–23 season
-                    using advanced stats and regression techniques.
-                    We examined Klay Thompson’s impact, first-quarter trends, shooting efficiency, bench versus
-                    starters, and Jordan Poole’s contribution.
-                </p>
-                <a href="port3.pdf" class="buttonp">PDF</a>
-            </div>
-
-            <div class="shape" data-category="sports">
-                <h3>Project: “What’s Wrong With This Golden State Warriors?”, 2022</h3>
-                <p>
-                    A deep dive into the Warriors’ mid-season slump. This study used play-by-play data to investigate
-                    offensive/defensive efficiency,
-                    key player absences, and performance volatility. We also analyzed Curry’s shooting patterns and the
-                    defensive impact of Draymond Green.
-                </p>
-                <a href="port4.pdf" class="buttonp">PDF</a>
-            </div>
-        </main>
-
-    </div>
+        </section>
+    </main>
 
     <footer>
-        <hr>
-        <div class="button-container">
-            <a href="https://github.com/Juggernaut0825" class="buttonp">Github</a>
-            <a href="https://www.linkedin.com/in/zijian-wang-071a46223/" class="buttonp">LinkedIn</a>
-            <a href="mailto:zwang3613@gatech.edu" class="buttonp">Email</a>
-            <a href="Michael_wang_resume.pdf" class="buttonp">Resume</a>
+        <div class="footer-inner">
+            <span>© 2026 Zijian (Michael) Wang</span>
+            <div class="footer-links">
+                <a href="https://github.com/Juggernaut0825">GitHub</a>
+                <a href="https://www.linkedin.com/in/zijian-wang-071a46223/">LinkedIn</a>
+                <a href="mailto:wzijian357@gmail.com">Email</a>
+                <a href="Michael_wang_resume.pdf">Resume</a>
+            </div>
         </div>
     </footer>
 
     <script>
-        function filterPortfolio(category) {
-            const projects = document.querySelectorAll('.shape');
-            projects.forEach(p => {
-                const match = category === 'all' || p.dataset.category === category;
-                p.style.display = match ? 'block' : 'none';
+        function filterPortfolio(category, btn) {
+            document.querySelectorAll('.filter-buttons button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.project').forEach(p => {
+                const cats = p.dataset.category.split(' ');
+                p.style.display = category === 'all' || cats.includes(category) ? '' : 'none';
             });
         }
-    </script>
 
-    <script>
         function toggleMenu() {
             document.getElementById("menu").classList.toggle("show");
         }
