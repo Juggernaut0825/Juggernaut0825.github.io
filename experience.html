@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experience - Zijian (Michael) Wang | Microsoft Research, E Closet, Buildsense AI</title>
+    <meta name="description"
+        content="Work experience of Zijian (Michael) Wang: IntentDelta agent benchmark with Microsoft Research, production search, recommendations and AI agents at E Closet, PaperMem agent memory at Buildsense AI.">
+    <meta name="author" content="Zijian (Michael) Wang">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://juggernaut0825.github.io/experience.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Experience - Zijian (Michael) Wang">
+    <meta property="og:description"
+        content="Agent benchmarks with Microsoft Research, production search and recommendation systems, and agent memory.">
+    <meta property="og:url" content="https://juggernaut0825.github.io/experience.html">
+    <meta property="og:image" content="https://juggernaut0825.github.io/img/profile.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Experience - Zijian (Michael) Wang">
+    <meta name="twitter:description"
+        content="Agent benchmarks with Microsoft Research, production search and recommendation systems, and agent memory.">
+    <meta name="twitter:image" content="https://juggernaut0825.github.io/img/profile.jpg">
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="nav-container">
+            <a href="/" id="logo">MICHAEL<span>.</span>WANG</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+                <li><a href="edu.html">Education</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="sr-only">Zijian (Michael) Wang - Experience</h1>
+
+        <!-- ===== Experience ===== -->
+        <section class="section" id="experience">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Experience</h2>
+                </div>
+
+                <div class="exp-list">
+                    <!-- Microsoft Research -->
+                    <article class="card exp" id="microsoft">
+                        <div class="exp-logo"><img src="img/logos/microsoft.svg" alt="Microsoft logo"></div>
+                        <div>
+                            <div class="exp-top">
+                                <h3>Microsoft Research</h3>
+                                <span class="exp-date">Sep 2026 – Present · Remote</span>
+                            </div>
+                            <div class="exp-role">IntentDelta: Benchmarking Agents under Evolving User Intent</div>
+                            <ul>
+                                <li>Collaborating with Microsoft Research mentors to build <strong>IntentDelta</strong>,
+                                    a benchmark testing whether tool-calling LLM agents adapt their decisions when a
+                                    user's intent changes partway through a multi-turn conversation.</li>
+                                <li>Developed 400+ human-annotated intent-change trajectories (2.6K+ conversational
+                                    turns) on top of <strong>WebShop</strong> and <strong>TravelPlanner</strong>,
+                                    covering five abstract update types (add, relax, override, reprioritize, scope
+                                    correction) and varied linguistic realization styles.</li>
+                                <li>Designed separate <strong>intent-level</strong> and <strong>action-level</strong>
+                                    evaluations to tell misunderstanding apart from execution failure, and benchmarked
+                                    11 frontier LLMs across 1.7K+ agent turns.</li>
+                                <li>Built the annotation and third-party human-evaluation tooling used to label and
+                                    audit trajectories.</li>
+                            </ul>
+                            <div class="metrics">
+                                <div class="metric"><b>400+</b><span>annotated trajectories</span></div>
+                                <div class="metric"><b>2.6K+</b><span>conversational turns</span></div>
+                                <div class="metric"><b>11</b><span>frontier LLMs benchmarked</span></div>
+                            </div>
+                            <div class="chips" style="margin-top: 14px;">
+                                <span class="chip">Tool-calling agents</span><span class="chip">Benchmark design</span>
+                                <span class="chip">LLM-as-judge</span><span class="chip">Human annotation</span>
+                            </div>
+                            <div class="link-row">
+                                <a class="link-pill" href="https://github.com/jieyuzhou42/IntentionChangeBench">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- E Closet -->
+                    <article class="card exp" id="ecloset">
+                        <div class="exp-logo"><img src="img/logos/ecloset.png" alt="E Closet logo"></div>
+                        <div>
+                            <div class="exp-top">
+                                <h3>E Closet</h3>
+                                <span class="exp-date">Feb 2026 – Sep 2026 · Atlanta, GA</span>
+                            </div>
+                            <div class="exp-role">Data Science &amp; AI Engineer Intern</div>
+                            <ul>
+                                <li><strong>Semantic search:</strong> built and deployed a six-tier cascade (exact
+                                    lexical → brand → structured color/category → semantic → concept → similar-brand
+                                    tail) with a self-evolving concept layer for abstract shopping queries, serving 158K
+                                    production searches per month. Later cut deep-page retrieval latency 31× (1.38 s → 44
+                                    ms) and expanded reachable results per query 7.4× (68 → 500).</li>
+                                <li><strong>Recommendations:</strong> designed vector retrieval over multi-centroid user
+                                    embeddings built from customer behavior, raising Hit@10 from 10.9% to 43.0% (3.9×)
+                                    and MRR by 4.5× in leave-one-out evaluation.</li>
+                                <li><strong>Ask-e:</strong> developed and shipped a skill-based AI customer-support
+                                    agent with 14 tools spanning product search, order tracking, returns, checkout, and
+                                    other shopping workflows. It requires shopper confirmation before executing any
+                                    action.</li>
+                                <li><strong>Reverse-image search:</strong> evaluated and integrated FashionSigLIP as the
+                                    multimodal embedding backbone, enabling similarity search from user-uploaded photos
+                                    (~22K production requests/month).</li>
+                                <li><strong>Analytics:</strong> built an internal analytics platform and admin dashboard
+                                    covering 50+ metrics across 8 business areas, automating code-validated daily
+                                    reporting and improving revenue-forecast WAPE from 0.367 to 0.339.</li>
+                            </ul>
+                            <div class="metrics">
+                                <div class="metric"><b>158K</b><span>searches / month</span></div>
+                                <div class="metric"><b>31×</b><span>faster deep-page retrieval</span></div>
+                                <div class="metric"><b>3.9×</b><span>Hit@10 (10.9% → 43.0%)</span></div>
+                                <div class="metric"><b>14</b><span>agent tools in Ask-e</span></div>
+                                <div class="metric"><b>~22K</b><span>image searches / month</span></div>
+                            </div>
+                            <div class="chips" style="margin-top: 14px;">
+                                <span class="chip">Semantic search</span><span class="chip">Recommender systems</span>
+                                <span class="chip">FashionSigLIP</span><span class="chip">LLM agents</span>
+                                <span class="chip">Forecasting</span>
+                            </div>
+                            <div class="link-row">
+                                <a class="link-pill" href="ecloset_recsys_report.pdf">RecSys technical report</a>
+                                <a class="link-pill" href="ecloset_search_architecture.pdf">Search architecture</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Buildsense AI -->
+                    <article class="card exp" id="buildsense">
+                        <div class="exp-logo bs">BS</div>
+                        <div>
+                            <div class="exp-top">
+                                <h3>Buildsense AI</h3>
+                                <span class="exp-date">Apr 2025 – Mar 2026 · Remote</span>
+                            </div>
+                            <div class="exp-role">AI Agent Development Intern</div>
+                            <ul>
+                                <li>Built <strong>PaperMem</strong>, an explainable, local-first memory system for AI
+                                    agents. It combines hybrid retrieval with pgvector and logical graph expansion
+                                    over claims, concepts, and entities in Neo4j for evidence retrieval.</li>
+                                <li>Achieved 4.24/5 overall quality on a 50-query LLM-as-judge benchmark, beating a
+                                    matched GPT-4o-mini RAG baseline by 9.9% in faithfulness and 4.9% in accuracy.</li>
+                                <li>Developed and deployed a full-stack AI research copilot (FastAPI, React, Electron,
+                                    PostgreSQL) that unifies conversations and uploaded documents into one memory and
+                                    surfaces retrieved evidence through an interactive semantic graph.</li>
+                                <li>Built <strong>juvenile-MCP-client</strong>, an MCP client that connects to multiple
+                                    tool servers and lets the model decide when a tool is actually needed instead of
+                                    forcing tool calls. It discovers tools automatically and includes a web UI for
+                                    toggling servers, an interactive CLI, and template-based report generation.</li>
+                            </ul>
+                            <div class="metrics">
+                                <div class="metric"><b>4.24 / 5</b><span>overall answer quality</span></div>
+                                <div class="metric"><b>+9.9%</b><span>faithfulness vs. RAG</span></div>
+                                <div class="metric"><b>+4.9%</b><span>accuracy vs. RAG</span></div>
+                            </div>
+                            <div class="chips" style="margin-top: 14px;">
+                                <span class="chip">Agent memory</span><span class="chip">pgvector</span>
+                                <span class="chip">Neo4j</span><span class="chip">FastAPI</span>
+                                <span class="chip">React / Electron</span><span class="chip">MCP</span>
+                            </div>
+                            <div class="link-row">
+                                <a class="link-pill" href="https://github.com/Juggernaut0825/PaperMem">PaperMem</a>
+                                <a class="link-pill"
+                                    href="https://github.com/Juggernaut0825/PaperMem/tree/main/llm_as_judge">Evaluation
+                                    code</a>
+                                <a class="link-pill"
+                                    href="https://github.com/Juggernaut0825/juvenile-MCP-client">juvenile-MCP-client</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Science for Georgia -->
+                    <article class="card exp" id="s4ga">
+                        <div class="exp-logo"><img src="img/logos/s4ga.png" alt="Science for Georgia logo"></div>
+                        <div>
+                            <div class="exp-top">
+                                <h3>Science for Georgia</h3>
+                                <span class="exp-date">Sep 2023 – May 2024 · Atlanta, GA</span>
+                            </div>
+                            <div class="exp-role">Data Science &amp; Capstone Research Intern</div>
+                            <ul>
+                                <li>Integrated 4+ environmental and public-health datasets for census-tract analysis
+                                    using Python and ArcGIS.</li>
+                                <li>Modeled 2020–2023 water-quality trends with ARIMA/SARIMAX and identified 5 severe
+                                    indicators above reported standards, including mercury at ~38× and E. coli at ~13×
+                                    their thresholds.</li>
+                                <li>Published an interactive ArcGIS StoryMap identifying high-risk tracts with up to 6
+                                    disadvantaged categories and 38.7% fair/poor-health prevalence.</li>
+                            </ul>
+                            <div class="link-row">
+                                <a class="link-pill"
+                                    href="https://storymaps.arcgis.com/stories/ce53cf1b1d124ac39fcb9a587b409910">StoryMap</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <span>© 2026 Zijian (Michael) Wang</span>
+            <div class="footer-links">
+                <a href="https://github.com/Juggernaut0825">GitHub</a>
+                <a href="https://www.linkedin.com/in/zijian-wang-071a46223/">LinkedIn</a>
+                <a href="mailto:wzijian357@gmail.com">Email</a>
+                <a href="Michael_wang_resume.pdf">Resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>
